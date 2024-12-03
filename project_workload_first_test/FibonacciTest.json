@@ -1,0 +1,29 @@
+{
+    "className": "Fibonacci",
+    "testMethods": [
+        {
+            "methodName": "testFibIterWithZero",
+            "code": "@Test \\nvoid testFibIterWithZero(){\\n assertEquals(0, Fibonacci.fibIter(0));\\n}"
+        },
+        {
+            "methodName": "testFibIterWithOne",
+            "code": "@Test \\nvoid testFibIterWithOne(){\\n assertEquals(1, Fibonacci.fibIter(1));\\n}"
+        },
+        {
+            "methodName": "testFibIterWithTwo",
+            "code": "@Test \\nvoid testFibIterWithTwo(){\\n assertEquals(1, Fibonacci.fibIter(2));\\n}"
+        },
+        {
+            "methodName": "testFibIterWithNegativeOne",
+            "code": "@Test \\nvoid testFibIterWithNegativeOne() throws Exception {\\n try {\\n assertEquals(-1, Fibonacci.fibIter(-1));\\n } catch (Exception e) {\\n fail(\"Expected fibIter(-1) to return -1 but it threw an exception\");\\n }\\n}"
+        },
+        {
+            "methodName": "testFibIterWithPositiveOne",
+            "code": "@Test \\nvoid testFibIterWithPositiveOne(){\\n assertEquals(1, Fibonacci.fibIter(1));\\n}"
+        },
+        {
+            "methodName": "testFibIterWithLargeNumber",
+            "code": "@Test \\nvoid testFibIterWithLargeNumber(){\\n assertEquals(34, Fibonacci.fibIter(8));\\n}"
+        }
+    ]
+}

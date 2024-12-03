@@ -1,0 +1,3 @@
+Create Java JUnit 5 TestMethods for the provided Java Class {java_class}. Try to get a high code coverage and make robust tests against mutations. All conditional expressions must assume true and false values. Tests with Boundary Values are also mandatory. For numeric data, always use positive and negative values. Before you make use of a variable, make sure it is instantiated to not get any compiler errors. Also add a throws-Statement where a test method might throw an unhandled exception. Provide the results in JSON format, matching the TestSuite model:
+- className: the name of the provided class under testing
+- testMethods: A list of all test methods for the class under testing

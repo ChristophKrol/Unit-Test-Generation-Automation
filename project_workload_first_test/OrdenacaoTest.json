@@ -1,0 +1,29 @@
+{
+    "className": "Ordenacao",
+    "testMethods": [
+        {
+            "methodName": "testOrdenaWithEmptyArray",
+            "code": "@Test \\nvoid testOrdenaWithEmptyArray() throws Exception {\\n assertThrows(NullPointerException.class, () -> Ordenacao.orde-na(new int[0], 0));\\n}"
+        },
+        {
+            "methodName": "testOrdenaWithOneElementArray",
+            "code": "@Test \\nvoid testOrdenaWithOneElementArray() throws Exception {\\n int[] array = new int[]{5};\\n Ordenacao.orde-na(array, 1);\\n assertEquals(5, array[0]);\\n}"
+        },
+        {
+            "methodName": "testOrdenaWithMultipleElementsArray",
+            "code": "@Test \\nvoid testOrdenaWithMultipleElementsArray() throws Exception {\\n int[] array = new int[]{3, 2, 1};\\n Ordenacao.orde-na(array, 3);\\n assertArrayEquals(new int[]{1, 2, 3}, array);\\n}"
+        },
+        {
+            "methodName": "testOrdenaWithNegativeValues",
+            "code": "@Test \\nvoid testOrdenaWithNegativeValues() throws Exception {\\n int[] array = new int[]{-5, -2, 1};\\n Ordenacao.orde-na(array, 3);\\n assertArrayEquals(new int[]{-5, -2, 1}, array);\\n}"
+        },
+        {
+            "methodName": "testOrdenaWithPositiveValues",
+            "code": "@Test \\nvoid testOrdenaWithPositiveValues() throws Exception {\\n int[] array = new int[]{3, 2, 1};\\n Ordenacao.orde-na(array, 3);\\n assertArrayEquals(new int[]{1, 2, 3}, array);\\n}"
+        },
+        {
+            "methodName": "testOrdenaWithBoundaryValues",
+            "code": "@Test \\nvoid testOrdenaWithBoundaryValues() throws Exception {\\n int[] array = new int[]{-5, -4, -3, -2, -1, 0};\\n Ordenacao.orde-na(array, 6);\\n assertArrayEquals(new int[]{-5, -4, -3, -2, -1, 0}, array);\\n}"
+        }
+    ]
+}

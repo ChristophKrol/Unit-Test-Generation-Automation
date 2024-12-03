@@ -1,0 +1,17 @@
+{
+    "className": "Grafo",
+    "testMethods": [
+        {
+            "methodName": "testGrafoTranspostoWithEmptyGraph",
+            "code": "@Test\nvoid testGrafoTranspostoWithEmptyGraph(){\n\tGrafo grafo = new Grafo();\n\tGrafo transposed = grafo.grafoTransposto();\n\tassertEquals(grafo, transposed);\n}\n"
+        },
+        {
+            "methodName": "testGrafoTranspostoWithSingleEdge",
+            "code": "@Test\nvoid testGrafoTranspostoWithSingleEdge(){\n\tGrafo grafo = new Grafo();\n\tgrafo.insereAresta(0, 1, 5);\n\tGrafo transposed = grafo.grafoTransposto();\n\tassertEquals(new Grafo(), transposed);\n}\n"
+        },
+        {
+            "methodName": "testGrafoTranspostoWithMultipleEdges",
+            "code": "@Test\nvoid testGrafoTranspostoWithMultipleEdges(){\n\tGrafo grafo = new Grafo();\n\tgrafo.insereAresta(0, 1, 5);\n\tgrafo.insereAresta(1, 2, 3);\n\tgrafo.insereAresta(2, 0, 4);\n\tGrafo transposed = grafo.grafoTransposto();\n\tassertEquals(new Grafo(), transposed);\n}\n"
+        }
+    ]
+}

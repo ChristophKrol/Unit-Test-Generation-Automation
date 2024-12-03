@@ -1,0 +1,25 @@
+{
+    "className": "AvaliaMultMatrizes",
+    "testMethods": [
+        {
+            "methodName": "testMultmatrizeWithEmptyArray",
+            "code": "@Test \nvoid testMultmatrizeWithEmptyArray() throws IOException { \n    AvaliaMultMatrizes.multmatrize(0, new int[0]); \n}"
+        },
+        {
+            "methodName": "testMultmatrizeWithOneElementArray",
+            "code": "@Test \nvoid testMultmatrizeWithOneElementArray() throws IOException { \n    AvaliaMultMatrizes.multmatrize(1, new int[]{0}); \n}"
+        },
+        {
+            "methodName": "testMultmatrizeWithMultipleElementsArray",
+            "code": "@Test \nvoid testMultmatrizeWithMultipleElementsArray() throws IOException { \n    AvaliaMultMatrizes.multmatrize(3, new int[]{0, 1, 2}); \n}"
+        },
+        {
+            "methodName": "testMultmatrizeWithNegativeArray",
+            "code": "@Test \nvoid testMultmatrizeWithNegativeArray() throws IOException { \n    AvaliaMultMatrizes.multmatrize(2, new int[]{-1, 0, 1}); \n}"
+        },
+        {
+            "methodName": "testMultmatrizeWithLargeArray",
+            "code": "@Test \nvoid testMultmatrizeWithLargeArray() throws IOException { \n    AvaliaMultMatrizes.multmatrize(5, new int[]{0, 1, 2, 3, 4, 5}); \n}"
+        }
+    ]
+}

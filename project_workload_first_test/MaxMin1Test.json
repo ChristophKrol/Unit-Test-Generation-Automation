@@ -1,0 +1,29 @@
+{
+    "className": "MaxMin1",
+    "testMethods": [
+        {
+            "methodName": "testMaxMinWithEmptyArray",
+            "code": "@Test \\nvoid testMaxMinWithEmptyArray(){\\n assertArrayEquals(new int[2], MaxMin1.maxMin1(new int[0], 0));\\n}"
+        },
+        {
+            "methodName": "testMaxMinWithOneElementArray",
+            "code": "@Test \\nvoid testMaxMinWithOneElementArray(){\\n int[] expected = new int[]{v, v};\\n assertArrayEquals(expected, MaxMin1.maxMin1(new int[]{v}, 1));\\n}"
+        },
+        {
+            "methodName": "testMaxMinWithMultipleElementsArray",
+            "code": "@Test \\nvoid testMaxMinWithMultipleElementsArray(){\\n int[] expected = new int[]{max3, min1};\\n assertArrayEquals(expected, MaxMin1.maxMin1(new int[]{min1, max2, min2, max3}, 4));\\n}"
+        },
+        {
+            "methodName": "testMaxMinWithNegativeValues",
+            "code": "@Test \\nvoid testMaxMinWithNegativeValues(){\\n int[] expected = new int[]{-10, -20};\\n assertArrayEquals(expected, MaxMin1.maxMin1(new int[]{-20, -10}, 2));\\n}"
+        },
+        {
+            "methodName": "testMaxMinWithPositiveValues",
+            "code": "@Test \\nvoid testMaxMinWithPositiveValues(){\\n int[] expected = new int[]{100, 50};\\n assertArrayEquals(expected, MaxMin1.maxMin1(new int[]{50, 100}, 2));\\n}"
+        },
+        {
+            "methodName": "testMaxMinWithBoundaryValues",
+            "code": "@Test \\nvoid testMaxMinWithBoundaryValues(){\\n int[] expected = new int[]{0, 0};\\n assertArrayEquals(expected, MaxMin1.maxMin1(new int[]{0}, 1));\\n}"
+        }
+    ]
+}

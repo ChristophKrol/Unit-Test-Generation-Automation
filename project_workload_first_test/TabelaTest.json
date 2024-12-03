@@ -1,0 +1,25 @@
+{
+    "className": "Tabela",
+    "testMethods": [
+        {
+            "methodName": "testTabelaEmptyArray",
+            "code": "@Test\nvoid testTabelaEmptyArray(){\n\tassertNull(Tabela.registros);\n}"
+        },
+        {
+            "methodName": "testTabelaOneElementArray",
+            "code": "@Test\nvoid testTabelaOneElementArray(){\n\tItem item = new MeuItem(1);\n\tTabela tabela = new Tabela();\n\ttabela.insere(item);\n\tassertEquals(item, tabela.registros[0]);\n}"
+        },
+        {
+            "methodName": "testTabelaMultipleElementsArray",
+            "code": "@Test\nvoid testTabelaMultipleElementsArray(){\n\tItem item1 = new MeuItem(1), item2 = new MeuItem(2), item3 = new MeuItem(3);\n\tTabela tabela = new Tabela();\n\ttabela.insere(item1); tabela.insere(item2); tabela.insere(item3);\n\tassertEquals(item3, tabela.registros[tabela.n]);\n}"
+        },
+        {
+            "methodName": "testTabelaSearch",
+            "code": "@Test\nvoid testTabelaSearch(){\n\tItem item = new MeuItem(1), searchItem = new MeuItem(2);\n\tTabela tabela = new Tabela();\n\ttabela.insere(item); tabela.insere(searchItem);\n\tassertEquals(searchItem, tabela.registros[tabela.n-1]);\n}"
+        },
+        {
+            "methodName": "testPermutacaoRandomica",
+            "code": "@Test\nvoid testPermutacaoRandomica(){\n\tMeuItem[] v = new MeuItem[20];\n\tfor (int i = 1; i <= 20; i++) v[i] = new MeuItem(i);\n\tPermutacaoRandomica.permut(v, 20);\n\t// TODO: implement assertion for permutation\n}"
+        }
+    ]
+}

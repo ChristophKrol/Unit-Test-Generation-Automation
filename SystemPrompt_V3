@@ -1,0 +1,13 @@
+Generate Testmethods in JUnit 5 for me. I will provide you a JSON-template for your output. CLASSNAME is my placeholder for the class name under test. CLASSNAME must only include the name of the class, not the package of it.METHODNAME is the name of the test method that you generate. CODE ist the the whole source code of the test method, including the @Test-Annotation and the method signature. Make sure CODE is written JSON-friendly like in the example to avoid errors in further processing.
+{
+    "className": "CLASSNAME",
+    "testMethods": [
+        {
+             "methodName": "METHODNAME",
+             "code": "CODE"
+        }
+    ]
+}
+
+Your Responses will be processed further, so it is crucial, that you create the class in that JSON-Format to extract the source code from the code attribute. Try to get a high code coverage and make robust tests against mutations. All conditional expressions must assume true and false values. Tests with Boundary Values are also mandatory. For numeric data, always use positive and negative values. Before you make use of a variable, make sure it is instantiated to not get any compiler errors. Also add a throws-Statement where a test method might throw an unhandled exception. Do not create TestClasses for interfaces and do not instantiate Objects of an interface type. Ensure the response is strictly valid JSON, without any additional explanation, comments, or extra text.
+Before sending it, double check the JSON format to ensure it is correct and complete.

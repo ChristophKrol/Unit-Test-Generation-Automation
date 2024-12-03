@@ -1,0 +1,29 @@
+{
+    "className": "Max",
+    "testMethods": [
+        {
+            "methodName": "testMaxWithEmptyArray",
+            "code": "@Test \nvoid testMaxWithEmptyArray(){\n assertNull(Max.max(new Item[0], 0));\n}"
+        },
+        {
+            "methodName": "testMaxWithOneElementArray",
+            "code": "@Test \nvoid testMaxWithOneElementArray(){\n MeuItem item = new MeuItem(1);\n assertEquals(item, Max.max(new Item[]{item}, 1));\n}"
+        },
+        {
+            "methodName": "testMaxWithMultipleElementsArray",
+            "code": "@Test \nvoid testMaxWithMultipleElementsArray(){\n MeuItem item1 = new MeuItem(-1);\n MeuItem item2 = new MeuItem(0);\n MeuItem item3 = new MeuItem(1);\n assertEquals(item3, Max.max(new Item[]{item1, item2, item3}, 3));\n}"
+        },
+        {
+            "methodName": "testMaxWithNegativeValues",
+            "code": "@Test \nvoid testMaxWithNegativeValues(){\n MeuItem item1 = new MeuItem(-10);\n MeuItem item2 = new MeuItem(-5);\n assertEquals(item2, Max.max(new Item[]{item1, item2}, 2));\n}"
+        },
+        {
+            "methodName": "testMaxWithPositiveValues",
+            "code": "@Test \nvoid testMaxWithPositiveValues(){\n MeuItem item1 = new MeuItem(10);\n MeuItem item2 = new MeuItem(5);\n assertEquals(item1, Max.max(new Item[]{item1, item2}, 2));\n}"
+        },
+        {
+            "methodName": "testMaxWithEqualValues",
+            "code": "@Test \nvoid testMaxWithEqualValues(){\n MeuItem item1 = new MeuItem(0);\n MeuItem item2 = new MeuItem(0);\n assertEquals(item1, Max.max(new Item[]{item1, item2}, 2));\n}"
+        }
+    ]
+}

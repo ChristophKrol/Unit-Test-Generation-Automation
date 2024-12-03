@@ -1,0 +1,29 @@
+{
+    "className": "Fila",
+    "testMethods": [
+        {
+            "methodName": "testEmptyQueue",
+            "code": "@Test\nvoid testEmptyQueue(){\n    Fila fila = new Fila();\n    assertNull(fila.item);\n}\n"
+        },
+        {
+            "methodName": "testEnqueue",
+            "code": "@Test\nvoid testEnqueue() throws Exception{\n    Fila fila = new Fila();\n    Object item1 = \"Item 1\";\n    Object item2 = \"Item 2\";\n    fila.enfileira(item1);\n    assertEquals(item1, fila.desenfileira());\n}\n"
+        },
+        {
+            "methodName": "testDequeue",
+            "code": "@Test\nvoid testDequeue() throws Exception{\n    Fila fila = new Fila();\n    Object item1 = \"Item 1\";\n    Object item2 = \"Item 2\";\n    fila.enfileira(item1);\n    fila.enfileira(item2);\n    assertEquals(item1, fila.desenfileira());\n}\n"
+        },
+        {
+            "methodName": "testQueueFull",
+            "code": "@Test\nvoid testQueueFull() throws Exception{\n    Fila fila = new Fila();\n    for (int i = 0; i < 1000; i++) {\n        Object item = \"Item\" + i;\n        fila.enfileira(item);\n    }\n    try {\n        fila.enfileira(\"Item 1001\");\n        fail(\"Expected an exception\");\n    } catch (Exception e) {\n        assertEquals(\"Erro: A fila esta cheia\", e.getMessage());\n    }\n}\n"
+        },
+        {
+            "methodName": "testQueueEmpty",
+            "code": "@Test\nvoid testQueueEmpty() throws Exception{\n    Fila fila = new Fila();\n    try {\n        fila.desenfileira();\n        fail(\"Expected an exception\");\n    } catch (Exception e) {\n        assertEquals(\"Erro: A fila esta vazia\", e.getMessage());\n    }\n}\n"
+        },
+        {
+            "methodName": "testPrintQueue",
+            "code": "@Test\nvoid testPrintQueue() throws Exception{\n    Fila fila = new Fila();\n    Object item1 = \"Item 1\";\n    Object item2 = \"Item 2\";\n    fila.enfileira(item1);\n    fila.enfileira(item2);\n    fila.imprime();\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "className": "Pilha",
+    "testMethods": [
+        {
+            "methodName": "testPilhaEmptyArray",
+            "code": "@Test\nvoid testPilhaEmptyArray(){\n  Pilha pilha = new Pilha();\n  assertEquals(0, pilha.tamanho());\n}\n"
+        },
+        {
+            "methodName": "testPilhaPushOneElement",
+            "code": "@Test\nvoid testPilhaPushOneElement(){\n  Pilha pilha = new Pilha();\n  pilha.empilha(\"item\");\n  assertEquals(1, pilha.tamanho());\n}\n"
+        },
+        {
+            "methodName": "testPilhaPopFromEmptyArray",
+            "code": "@Test\nvoid testPilhaPopFromEmptyArray(){\n  Pilha pilha = new Pilha();\n  try {\n    pilha.desempilha();\n    fail(\"Expected Exception\");\n  } catch (Exception e) {}\n}\n"
+        },
+        {
+            "methodName": "testPilhaPushMultipleElements",
+            "code": "@Test\nvoid testPilhaPushMultipleElements(){\n  Pilha pilha = new Pilha();\n  pilha.empilha(\"item1\");\n  pilha.empilha(\"item2\");\n  pilha.empilha(\"item3\");\n  assertEquals(3, pilha.tamanho());\n}\n"
+        },
+        {
+            "methodName": "testPilhaPopFromFullArray",
+            "code": "@Test\nvoid testPilhaPopFromFullArray(){\n  Pilha pilha = new Pilha();\n  for (int i = 0; i < 1000; i++) {\n    pilha.empilha(\"item\");\n  }\n  try {\n    pilha.desempilha();\n    fail(\"Expected Exception\");\n  } catch (Exception e) {}\n}\n"
+        },
+        {
+            "methodName": "testPilhaIsEmpty",
+            "code": "@Test\nvoid testPilhaIsEmpty(){\n  Pilha pilha = new Pilha();\n  assertTrue(pilha.vazia());\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "className": "MaxMin4",
+    "testMethods": [
+        {
+            "methodName": "testMaxMin4WithEmptyArray",
+            "code": "@Test \nvoid testMaxMin4WithEmptyArray(){\n    int[] v = new int[0];\n    assertEquals(new int[]{}, MaxMin4.maxMin4(v, 0, 0));\n}\n"
+        },
+        {
+            "methodName": "testMaxMin4WithOneElementArray",
+            "code": "@Test \nvoid testMaxMin4WithOneElementArray(){\n    int[] v = new int[]{1};\n    assertEquals(new int[]{1, 1}, MaxMin4.maxMin4(v, 0, 0));\n}\n"
+        },
+        {
+            "methodName": "testMaxMin4WithTwoElementsArray",
+            "code": "@Test \nvoid testMaxMin4WithTwoElementsArray(){\n    int[] v = new int[]{1, 2};\n    assertEquals(new int[]{2, 1}, MaxMin4.maxMin4(v, 0, 1));\n}\n"
+        },
+        {
+            "methodName": "testMaxMin4WithThreeElementsArray",
+            "code": "@Test \nvoid testMaxMin4WithThreeElementsArray(){\n    int[] v = new int[]{1, 2, 3};\n    assertEquals(new int[]{3, 1}, MaxMin4.maxMin4(v, 0, 2));\n}\n"
+        },
+        {
+            "methodName": "testMaxMin4WithFourElementsArray",
+            "code": "@Test \nvoid testMaxMin4WithFourElementsArray(){\n    int[] v = new int[]{1, 3, 2, 4};\n    assertEquals(new int[]{4, 1}, MaxMin4.maxMin4(v, 0, 3));\n}\n"
+        },
+        {
+            "methodName": "testMaxMin4WithNegativeValues",
+            "code": "@Test \nvoid testMaxMin4WithNegativeValues(){\n    int[] v = new int[]{-1, -2, -3};\n    assertEquals(new int[]{-1, -3}, MaxMin4.maxMin4(v, 0, 2));\n}\n"
+        },
+        {
+            "methodName": "testMaxMin4WithPositiveAndNegativeValues",
+            "code": "@Test \nvoid testMaxMin4WithPositiveAndNegativeValues(){\n    int[] v = new int[]{1, -2, 3, -4};\n    assertEquals(new int[]{1, -4}, MaxMin4.maxMin4(v, 0, 3));\n}\n"
+        }
+    ]
+}

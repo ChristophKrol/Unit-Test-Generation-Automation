@@ -1,0 +1,53 @@
+{
+    "className": "CasamentoExato",
+    "testMethods": [
+        {
+            "methodName": "testForcaBrutaEmptyArray",
+            "code": "@Test\nvoid testForcaBrutaEmptyArray(){\n    String T = \"\";\n    int n = 0;\n    String P = \"\";\n    int m = 0;\n    forcaBruta(T, n, P, m);\n}\n"
+        },
+        {
+            "methodName": "testForcaBrutaOneElementArray",
+            "code": "@Test\nvoid testForcaBrutaOneElementArray(){\n    String T = \"a\";\n    int n = 1;\n    String P = \"a\";\n    int m = 1;\n    forcaBruta(T, n, P, m);\n}\n"
+        },
+        {
+            "methodName": "testForcaBrutaMultipleElementsArray",
+            "code": "@Test\nvoid testForcaBrutaMultipleElementsArray(){\n    String T = \"abc\";\n    int n = 3;\n    String P = \"ab\";\n    int m = 2;\n    forcaBruta(T, n, P, m);\n}\n"
+        },
+        {
+            "methodName": "testShiftAndExatoEmptyArray",
+            "code": "@Test\nvoid testShiftAndExatoEmptyArray(){\n    String T = \"\";\n    int n = 0;\n    String P = \"\";\n    int m = 0;\n    shiftAndExato(T, n, P, m);\n}\n"
+        },
+        {
+            "methodName": "testShiftAndExatoOneElementArray",
+            "code": "@Test\nvoid testShiftAndExatoOneElementArray(){\n    String T = \"a\";\n    int n = 1;\n    String P = \"a\";\n    int m = 1;\n    shiftAndExato(T, n, P, m);\n}\n"
+        },
+        {
+            "methodName": "testShiftAndExatoMultipleElementsArray",
+            "code": "@Test\nvoid testShiftAndExatoMultipleElementsArray(){\n    String T = \"abc\";\n    int n = 3;\n    String P = \"ab\";\n    int m = 2;\n    shiftAndExato(T, n, P, m);\n}\n"
+        },
+        {
+            "methodName": "testBmhEmptyArray",
+            "code": "@Test\nvoid testBmhEmptyArray(){\n    String T = \"\";\n    int n = 0;\n    String P = \"\";\n    int m = 0;\n    bmh(T, n, P, m);\n}\n"
+        },
+        {
+            "methodName": "testBmhOneElementArray",
+            "code": "@Test\nvoid testBmhOneElementArray(){\n    String T = \"a\";\n    int n = 1;\n    String P = \"a\";\n    int m = 1;\n    bmh(T, n, P, m);\n}\n"
+        },
+        {
+            "methodName": "testBmhMultipleElementsArray",
+            "code": "@Test\nvoid testBmhMultipleElementsArray(){\n    String T = \"abc\";\n    int n = 3;\n    String P = \"ab\";\n    int m = 2;\n    bmh(T, n, P, m);\n}\n"
+        },
+        {
+            "methodName": "testBmhsEmptyArray",
+            "code": "@Test\nvoid testBmhsEmptyArray(){\n    String T = \"\";\n    int n = 0;\n    String P = \"\";\n    int m = 0;\n    bmhs(T, n, P, m);\n}\n"
+        },
+        {
+            "methodName": "testBmhsOneElementArray",
+            "code": "@Test\nvoid testBmhsOneElementArray(){\n    String T = \"a\";\n    int n = 1;\n    String P = \"a\";\n    int m = 1;\n    bmhs(T, n, P, m);\n}\n"
+        },
+        {
+            "methodName": "testBmhsMultipleElementsArray",
+            "code": "@Test\nvoid testBmhsMultipleElementsArray(){\n    String T = \"abc\";\n    int n = 3;\n    String P = \"ab\";\n    int m = 2;\n    bmhs(T, n, P, m);\n}\n"
+        }
+    ]
+}

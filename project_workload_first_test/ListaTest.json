@@ -1,0 +1,21 @@
+{
+    "className": "Lista",
+    "testMethods": [
+        {
+            "methodName": "testEmptyList",
+            "code": "@Test\nvoid testEmptyList(){\n assertEquals(true, lista.vazia());\n}\n"
+        },
+        {
+            "methodName": "testInsertOneElement",
+            "code": "@Test\nvoid testInsertOneElement(){\n lista.insere(1);\n assertEquals(false, lista.vazia());\n}\n"
+        },
+        {
+            "methodName": "testInsertMultipleElements",
+            "code": "@Test\nvoid testInsertMultipleElements(){\n for (int i = 0; i < 5; i++){\n lista.insere(i);\n }\n assertEquals(false, lista.vazia());\n}\n"
+        },
+        {
+            "methodName": "testPrintList",
+            "code": "@Test\nvoid testPrintList(){\n lista.insere(1); lista.insere(2); lista.insere(3);\n lista.imprime();\n}\n"
+        }
+    ]
+}

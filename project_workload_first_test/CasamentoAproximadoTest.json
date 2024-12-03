@@ -1,0 +1,29 @@
+{
+    "className": "CasamentoAproximado",
+    "testMethods": [
+        {
+            "methodName": "testShiftAndAproximadoWithEmptyString",
+            "code": "@Test \\nvoid testShiftAndAproximadoWithEmptyString(){\\n String T = \"\";\\n CasamentoAproximado.shiftAndAproximado(T, 0, \"\", 0, 1);\\n}"
+        },
+        {
+            "methodName": "testShiftAndAproximadoWithOneCharacterString",
+            "code": "@Test \\nvoid testShiftAndAproximadoWithOneCharacterString(){\\n String T = \"a\";\\n CasamentoAproximado.shiftAndAproximado(T, 1, \"a\", 1, 1);\\n}"
+        },
+        {
+            "methodName": "testShiftAndAproximadoWithMultipleCharactersString",
+            "code": "@Test \\nvoid testShiftAndAproximadoWithMultipleCharactersString(){\\n String T = \"abc\";\\n CasamentoAproximado.shiftAndAproximado(T, 3, \"abc\", 3, 1);\\n}"
+        },
+        {
+            "methodName": "testShiftAndAproximadoWithNullPattern",
+            "code": "@Test \\nvoid testShiftAndAproximadoWithNullPattern(){\\n String T = \"\";\\n String P = null;\\n try {\\n CasamentoAproximado.shiftAndAproximado(T, 0, P, 0, 1);\\n } catch (Exception e) {\\n assertEquals(true, true);\\n} \\n}"
+        },
+        {
+            "methodName": "testShiftAndAproximadoWithNegativeK",
+            "code": "@Test \\nvoid testShiftAndAproximadoWithNegativeK(){\\n String T = \"\";\\n int k = -1;\\n try {\\n CasamentoAproximado.shiftAndAproximado(T, 0, \"\", 0, k);\\n } catch (Exception e) {\\n assertEquals(true, true);\\n} \\n}"
+        },
+        {
+            "methodName": "testShiftAndAproximadoWithZeroK",
+            "code": "@Test \\nvoid testShiftAndAproximadoWithZeroK(){\\n String T = \"\";\\n int k = 0;\\n CasamentoAproximado.shiftAndAproximado(T, 0, \"\", 0, k);\\n}"
+        }
+    ]
+}

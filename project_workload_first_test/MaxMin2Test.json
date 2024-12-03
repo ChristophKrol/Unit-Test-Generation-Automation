@@ -1,0 +1,29 @@
+{
+    "className": "MaxMin2",
+    "testMethods": [
+        {
+            "methodName": "testMaxMin2WithEmptyArray",
+            "code": "@Test \\nvoid testMaxMin2WithEmptyArray(){\\n int[] result = MaxMin2.maxMin2(new int[0], 0);\\n assertArrayEquals(new int[]{}, result);\\n}"
+        },
+        {
+            "methodName": "testMaxMin2WithOneElementArray",
+            "code": "@Test \\nvoid testMaxMin2WithOneElementArray(){\\n int[] result = MaxMin2.maxMin2(new int[]{5}, 1);\\n assertArrayEquals(new int[]{5, 5}, result);\\n}"
+        },
+        {
+            "methodName": "testMaxMin2WithMultipleElementsArray",
+            "code": "@Test \\nvoid testMaxMin2WithMultipleElementsArray(){\\n int[] result = MaxMin2.maxMin2(new int[]{-3, 1, 5}, 3);\\n assertArrayEquals(new int[]{5, -3}, result);\\n}"
+        },
+        {
+            "methodName": "testMaxMin2WithNegativeValues",
+            "code": "@Test \\nvoid testMaxMin2WithNegativeValues(){\\n int[] result = MaxMin2.maxMin2(new int[]{-10, -20, 0}, 3);\\n assertArrayEquals(new int[]{0, -20}, result);\\n}"
+        },
+        {
+            "methodName": "testMaxMin2WithEqualElements",
+            "code": "@Test \\nvoid testMaxMin2WithEqualElements(){\\n int[] result = MaxMin2.maxMin2(new int[]{5, 5, 5}, 3);\\n assertArrayEquals(new int[]{5, 5}, result);\\n}"
+        },
+        {
+            "methodName": "testMaxMin2WithUninitializedArray",
+            "code": "@Test \\nvoid testMaxMin2WithUninitializedArray(){\\n try { MaxMin2.maxMin2(null, 0); fail(); } catch (NullPointerException e) {}\\n}"
+        }
+    ]
+}

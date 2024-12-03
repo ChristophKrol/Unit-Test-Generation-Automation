@@ -1,0 +1,29 @@
+{
+    "className": "MaxMin3",
+    "testMethods": [
+        {
+            "methodName": "testMaxMin3WithEmptyArray",
+            "code": "@Test \nvoid testMaxMin3WithEmptyArray(){\n    int[] v = new int[0];\n    assertEquals(new int[]{}, MaxMin3.maxMin3(v, 0));\n}\n"
+        },
+        {
+            "methodName": "testMaxMin3WithOneElementArray",
+            "code": "@Test \nvoid testMaxMin3WithOneElementArray(){\n    int[] v = new int[1];\n    assertEquals(new int[]{v[0], v[0]}, MaxMin3.maxMin3(v, 1));\n}\n"
+        },
+        {
+            "methodName": "testMaxMin3WithTwoElementsArray",
+            "code": "@Test \nvoid testMaxMin3WithTwoElementsArray(){\n    int[] v = new int[2];\n    assertEquals(new int[]{v[0], v[1]}, MaxMin3.maxMin3(v, 2));\n}\n"
+        },
+        {
+            "methodName": "testMaxMin3WithThreeElementsArray",
+            "code": "@Test \nvoid testMaxMin3WithThreeElementsArray(){\n    int[] v = new int[3];\n    assertEquals(new int[]{v[0], v[2]}, MaxMin3.maxMin3(v, 3));\n}\n"
+        },
+        {
+            "methodName": "testMaxMin3WithNegativeValues",
+            "code": "@Test \nvoid testMaxMin3WithNegativeValues(){\n    int[] v = new int[]{1, -2, 3};\n    assertEquals(new int[]{-2, 3}, MaxMin3.maxMin3(v, 3));\n}\n"
+        },
+        {
+            "methodName": "testMaxMin3WithPositiveAndNegativeValues",
+            "code": "@Test \nvoid testMaxMin3WithPositiveAndNegativeValues(){\n    int[] v = new int[]{-1, -2, 0, 1};\n    assertEquals(new int[]{1, -2}, MaxMin3.maxMin3(v, 4));\n}\n"
+        }
+    ]
+}
